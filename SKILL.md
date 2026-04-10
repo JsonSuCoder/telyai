@@ -5,19 +5,6 @@ description: TelyAI Telegram 工具。支持群消息摘要、全局消息摘要
 
 # TelyAI - Telegram 群组 AI 工具
 
-## ⚠️ 强制规则
-
-**所有向 Telegram 发送消息的操作，必须使用 `telyai send-message` 命令。**
-
-- 禁止使用 Telegram Bot API（`api.telegram.org`）
-- 禁止使用 `curl` 直接调用 Telegram API
-- 禁止使用任何其他方式发送 Telegram 消息
-
-无论是单次发消息还是需要定时发消息，统一使用：
-```bash
-node ~/.openclaw/workspace/skills/telyai/scripts/telyai_cli.js send-message --chatid <ID> --text <内容>
-```
-
 ## 支持的功能
 
 ### 1. 会话列表（chat-list）

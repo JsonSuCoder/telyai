@@ -339,7 +339,7 @@ async function main(args) {
   const [subcommand, ...rest] = args;
 
   if (!subcommand || subcommand === '--help' || subcommand === '-h') {
-    console.log('Usage: telyai_cli.js <command> [options]');
+    console.log('Usage: /telyai <command> [options]');
     console.log('');
     console.log('Commands:');
     console.log('  chat-list          List all chats in TelyAI');
@@ -351,14 +351,14 @@ async function main(args) {
     console.log('  global-summary     Summarize messages across all chats');
     console.log('');
     console.log('Examples:');
-    console.log('  telyai_cli.js chat-list');
-    console.log('  telyai_cli.js summary --chatid -1001234567890');
-    console.log('  telyai_cli.js urgent-check --chatid -1001234567890 --rule "price drop"');
-    console.log('  telyai_cli.js get-contacts');
-    console.log('  telyai_cli.js send-message --chatid 5974693797 --text "Hello!"');
-    console.log('  telyai_cli.js get-group-members --chatid -1001234567890');
-    console.log('  telyai_cli.js global-summary --hours 24');
-    console.log('  telyai_cli.js global-summary --yesterday');
+    console.log('  /telyai chat-list');
+    console.log('  /telyai summary --chatid -1001234567890');
+    console.log('  /telyai urgent-check --chatid -1001234567890 --rule "price drop"');
+    console.log('  /telyai get-contacts');
+    console.log('  /telyai send-message --chatid 5974693797 --text "Hello!"');
+    console.log('  /telyai get-group-members --chatid -1001234567890');
+    console.log('  /telyai global-summary --hours 24');
+    console.log('  /telyai global-summary --yesterday');
     return;
   }
 
